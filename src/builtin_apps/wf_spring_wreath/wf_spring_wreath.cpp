@@ -155,6 +155,7 @@ namespace MOONCAKE {
             /* Init anim */
             _anim._img = lv_img_create(_data.screen);
             lv_obj_align(_anim._img, LV_ALIGN_CENTER, 0, 0);
+            lv_img_set_zoom(_anim._img, 256 * (lv_obj_get_width(_data.screen) / 368.0));
             _anim.setInterval(37);
             _anim.setIndex(0);
             _anim.startPlaying();
